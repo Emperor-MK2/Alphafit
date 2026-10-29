@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPHAFIT — Фитнес-клуб</title>
+  <meta name="description" content="ALPHAFIT — современный фитнес-клуб с профессиональными тренерами и программами тренировок.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="hero" id="hero">
+  <div class="hero-bg"><img fetchpriority="high" decoding="async" src="https://www.figma.com/api/mcp/asset/3bd4e3df-95f7-4080-8b80-80af96906583.png" alt="ALPHAFIT"></div>
+  <div class="hero-overlay"></div>logo-word
+  <header>
+    <a class="logo" href="#hero" aria-label="ALPHAFIT"><img class="logo-mark" src="assets/logo-mark.svg" alt=""><span class="logo-word">ALPHA<span>FIT</span></span></a>
+    <nav class="desktop-nav">
+      <a class="active" href="#hero">Главная</a><a href="#about">О клубе</a><a href="#programs">Программы</a><a href="#trainers">Тренеры</a><a href="#plans">Цены</a><a href="#blog">Блог</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="head-actions">
+      <button class="header-cta" data-scroll="#plans">Записаться на тренировку <span>→</span></button>
+      <button class="icon-btn mobile-menu-btn" aria-label="Меню">☰</button>
+    </div>
+  </header>
+  <nav class="mobile-nav" aria-hidden="true">
+    <a href="#hero">Главная</a><a href="#about">О клубе</a><a href="#programs">Программы</a><a href="#trainers">Тренеры</a><a href="#plans">Цены</a><a href="#blog">Блог</a><a href="#contacts">Контакты</a>
+  </nav>
+  <div class="hero-copy reveal">
+    <div class="eyebrow">СИЛЬНЕЕ. ВЫНОСЛИВЕЕ. УВЕРЕННЕЕ.</div>
+    <h1>ТВОЯ ЛУЧШАЯ<br>ВЕРСИЯ НАЧИНАЕТСЯ<br><em>ЗДЕСЬ</em></h1>
+    <p>Современный фитнес-клуб с профессиональными тренерами, инновационным оборудованием и атмосферой, где хочется достигать большего.</p>
+    <div class="hero-buttons"><button class="primary" data-scroll="#programs">Выбрать программу <span>→</span></button><button class="outline" data-scroll="#about">Узнать больше</button></div>
+  </div>
+  <div class="stats reveal">
+    <div class="stat"><strong>5000+</strong><span>довольных клиентов</span></div><div class="stat"><strong>120+</strong><span>профессиональных тренеров</span></div><div class="stat"><strong>24/7</strong><span>доступ к клубу</span></div><div class="stat"><strong>4.9</strong><span>средняя оценка</span></div>
+  </div>
+</section>
+<main>
+<section class="section reveal" id="programs"><div class="section-title"><div><i></i><div><h2>Наши программы</h2><p>Выберите направление, которое подходит именно тебе</p></div></div></div>
+<div class="program-grid">
+  <article class="program-card" style="--bg:url('https://www.figma.com/api/mcp/asset/af256358-9dea-4369-9648-4aeadee9afd8.png')"><span class="sprite program-sprite"></span><div><h3>СИЛОВЫЕ ТРЕНИРОВКИ</h3><p>Набор мышечной массы, увеличение силы и выносливости.</p></div><a href="#plans">Подробнее →</a></article>
+  <article class="program-card" style="--bg:url('https://www.figma.com/api/mcp/asset/86ff4df5-f548-4a83-88d7-ca41f70743a6.png')"><span class="sprite program-sprite"></span><div><h3>КАРДИО ТРЕНИРОВКИ</h3><p>Сжигание калорий, улучшение работы сердца и выносливости.</p></div><a href="#plans">Подробнее →</a></article>
+  <article class="program-card" style="--bg:url('https://www.figma.com/api/mcp/asset/fb434fd3-58c8-4a17-b837-52af4eecec41.png')"><span class="sprite program-sprite"></span><div><h3>ФУНКЦИОНАЛЬНЫЕ ТРЕНИРОВКИ</h3><p>Сила, координация, гибкость и контроль над телом.</p></div><a href="#plans">Подробнее →</a></article>
+  <article class="program-card" style="--bg:url('https://www.figma.com/api/mcp/asset/db0f2a23-d669-4c9b-9626-a594e9a74913.png')"><span class="sprite program-sprite"></span><div><h3>ЙОГА И ПИЛАТЕС</h3><p>Гармония тела и разума, улучшение осанки.</p></div><a href="#plans">Подробнее →</a></article>
+</div></section>
+<section class="section trainers reveal" id="trainers"><div class="section-title"><div><i></i><div><h2>Наши тренеры</h2><p>Профессионалы, которые помогут тебе достичь целей</p></div></div></div>
+<div class="trainer-grid">
+  <article class="trainer-card"><img src="https://www.figma.com/api/mcp/asset/f9ee8ac6-7d75-4861-a5a0-02f0e1ea063f.png" alt="Дмитрий Козлов"><div><h3>ДМИТРИЙ КОЗЛОВ</h3><p>Силовой тренер</p><small>Опыт: 6 лет</small></div></article>
+  <article class="trainer-card"><img src="https://www.figma.com/api/mcp/asset/7575538d-833b-4537-9cf9-c00235a36e90.png" alt="Анастасия Волкова"><div><h3>АНАСТАСИЯ ВОЛКОВА</h3><p>Тренер по функционалу</p><small>Опыт: 6 лет</small></div></article>
+  <article class="trainer-card"><img src="https://www.figma.com/api/mcp/asset/6c88e144-3ff3-4dc3-8792-f1a5ba84c07e.png" alt="Игорь Соколов"><div><h3>ИГОРЬ СОКОЛОВ</h3><p>Кардио тренер</p><small>Опыт: 5 лет</small></div></article>
+  <article class="trainer-card"><img src="https://www.figma.com/api/mcp/asset/3ad71e46-44ff-4457-bc08-c0485e7516f5.png" alt="Ксения Смирнова"><div><h3>КСЕНИЯ СМИРНОВА</h3><p>Тренер по йоге и пилатесу</p><small>Опыт: 7 лет</small></div></article>
+</div></section>
+<section class="section why reveal" id="about"><div class="section-title"><div><i></i><div><h2>Почему выбирают нас</h2></div></div></div><div class="why-grid">
+  <article><span class="sprite why-sprite"></span><div><h3>Современное оборудование</h3><p>Тренажеры нового поколения и зоны для функционала.</p></div></article><article><span class="sprite why-sprite"></span><div><h3>Профессиональные тренеры</h3><p>Сертифицированные специалисты с опытом.</p></div></article><article><span class="sprite why-sprite"></span><div><h3>Удобное расположение</h3><p>Легко добраться на любом транспорте.</p></div></article><article><span class="sprite why-sprite"></span><div><h3>Чистота и комфорт</h3><p>Регулярная уборка и свежий воздух.</p></div></article><article><span class="sprite why-sprite"></span><div><h3>Удобные раздевалки</h3><p>Все необходимое и безопасность.</p></div></article><article><span class="sprite why-sprite"></span><div><h3>Дружелюбная атмосфера</h3><p>Здесь ты — часть большого сообщества.</p></div></article>
+</div></section>
+<section class="section plans reveal" id="plans"><div class="section-title"><div><i></i><div><h2>Абонементы</h2><p>Выбери свой формат тренировок</p></div></div></div><div class="plans-grid">
+  <article class="plan"><h3>Разовый</h3><span>1 тренировка</span><strong>2 990 ₽</strong><button class="outline plan-btn" data-plan="Разовый">Выбрать</button></article>
+  <article class="plan popular"><b>Популярный</b><h3>Оптимальный</h3><span>8 тренировок</span><strong>4 990 ₽</strong><button class="outline plan-btn" data-plan="Оптимальный">Выбрать</button></article>
+  <article class="plan"><h3>Продвинутый</h3><span>12 тренировок</span><strong>7 490 ₽</strong><button class="outline plan-btn" data-plan="Продвинутый">Выбрать</button></article>
+  <article class="plan"><h3>Безлимит</h3><span>30 дней / без ограничений</span><strong>12 990 ₽</strong><button class="outline plan-btn" data-plan="Безлимит">Выбрать</button></article>
+<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!data-open-booking обязательно для открытия--  -->
+  <article class="promo" id="blog"><div><h3>Первая тренировка<br><em>бесплатно</em></h3><p>Оцени наш клуб, тренеров и атмосферу без обязательств.</p></div><button class="primary" data-open-booking>Записаться →</button></article>
+</div></section>
+<section class="section reviews reveal"><div class="section-title"><div><i></i><div><h2>Отзывы наших клиентов</h2></div></div><div class="arrows"><button id="prev" class="arrow-sprite"><span class="sprite sprite-header arrow-left-sprite"></span></button><button id="next" class="arrow-sprite"><span class="sprite sprite-header arrow-right-sprite"></span></button></div></div><div class="review-grid" id="reviewGrid"></div></section>
+</main>
+<footer id="contacts"><div class="footer-top"><div><a class="logo" href="#hero" aria-label="ALPHAFIT"><img class="logo-mark" src="assets/logo-mark.svg" alt=""><span class="logo-word">ALPHA<span>FIT</span></span></a><p>Сила. Здоровье. Результат.</p></div><nav><a href="#hero">Главная</a><a href="#about">О клубе</a><a href="#programs">Программы</a><a href="#trainers">Тренеры</a><a href="#plans">Цены</a><a href="#blog">Блог</a><a href="#contacts">Контакты</a></nav><div class="contacts"><p><span class="sprite footer-phone"></span>+7 (495) 123-45-67</p><p><span class="sprite footer-pin"></span>Москва, ул. Спортивная, 12</p></div></div><div class="divider"></div><div class="footer-bottom"><span>© 2025 ALPHAFIT. Все права защищены.</span><span class="legal-links"><a href="privacy.html">Политика конфиденциальности</a><a href="Пользовательское%20соглашение.html">Пользовательское соглашение</a></span></div></footer>
+<div class="toast" id="toast"></div>
+<div class="bk-overlay" id="bk-booking" aria-hidden="true">
+  <div class="bk-modal" role="dialog" aria-modal="true" aria-labelledby="bk-title">
+    <button class="bk-close" type="button" data-close-booking aria-label="Закрыть окно">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <div class="bk-form-view">
+      <span class="bk-badge">Пробная тренировка с тренером</span>
+      <h2 class="bk-title" id="bk-title">Запишитесь на тренировку</h2>
+      <p class="bk-lead">Оставьте данные, и мы свяжемся с вами, чтобы подтвердить запись.</p>
+
+      <form id="bk-form" novalidate>
+        <div class="bk-row">
+          <div class="bk-field" data-field="name">
+            <label for="bk-name">Имя</label>
+            <input class="bk-input" id="bk-name" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="given-name" maxlength="60">
+            <p class="bk-error">Введите имя</p>
+          </div>
+          <div class="bk-field" data-field="phone">
+            <label for="bk-phone">Телефон</label>
+            <input class="bk-input" id="bk-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+            <p class="bk-error">Введите номер полностью</p>
+          </div>
+        </div>
+
+        <div class="bk-field" data-field="date">
+          <label for="bk-date">Дата</label>
+          <input class="bk-input" id="bk-date" name="date" type="date">
+          <p class="bk-error">Выберите дату, начиная с сегодняшней</p>
+        </div>
+
+        <fieldset class="bk-field" data-field="time">
+          <legend>Время</legend>
+          <div class="bk-chips">
+            <label class="bk-chip"><input type="radio" name="time" value="08:00"><span>08:00</span></label>
+            <label class="bk-chip"><input type="radio" name="time" value="10:00"><span>10:00</span></label>
+            <label class="bk-chip"><input type="radio" name="time" value="12:00"><span>12:00</span></label>
+            <label class="bk-chip"><input type="radio" name="time" value="14:00"><span>14:00</span></label>
+            <label class="bk-chip"><input type="radio" name="time" value="16:00"><span>16:00</span></label>
+            <label class="bk-chip"><input type="radio" name="time" value="18:00"><span>18:00</span></label>
+            <label class="bk-chip"><input type="radio" name="time" value="20:00"><span>20:00</span></label>
+          </div>
+          <p class="bk-error">Выберите время</p>
+        </fieldset>
+
+        <div class="bk-field" data-field="consent">
+          <label class="bk-consent">
+            <input type="checkbox" name="consent">
+            <span class="bk-consent__box" aria-hidden="true">
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1.5 5.2l3 3L10.5 2" stroke="#0e1100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>Я согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a></span>
+          </label>
+          <p class="bk-error">Нужно согласие на обработку данных</p>
+        </div>
+
+        <button class="bk-btn" type="submit"><span class="bk-spinner" aria-hidden="true"></span><span>Записаться на пробное</span></button>
+        <p class="bk-note">Заявку подаёт лицо старше 18 лет или родитель (законный представитель)</p>
+      </form>
+    </div>
+
+    <div class="bk-success" aria-live="polite">
+      <div class="bk-success__icon">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><path d="M7 17.5l7 7L27 10" stroke="#c6ff3d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 class="bk-title">Заявка отправлена</h2>
+      <p>Мы свяжемся с вами по телефону <b id="bk-ok-phone"></b>, чтобы подтвердить запись.</p>
+      <dl class="bk-summary">
+        <div><dt>Дата</dt><dd id="bk-ok-date"></dd></div>
+        <div><dt>Время</dt><dd id="bk-ok-time"></dd></div>
+      </dl>
+      <button class="bk-btn" type="button" data-close-booking>Отлично</button>
+    </div>
+  </div>
+</div>
+<script src="script.js?v=2"></script>
+</body>
+</html>

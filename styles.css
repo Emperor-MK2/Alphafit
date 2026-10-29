@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,700;0,800;1,800&display=swap');
+:root{--bg:#0a0d0f;--card:#0f1518;--line:#1e282b;--muted:#9aa4a7;--lime:#a4ec2e;--white:#f7f9fa}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,system-ui,sans-serif}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.hero{height:492px;position:relative;overflow:hidden}.hero-bg{position:absolute;inset:0;background:#080b0d}.hero-bg img{position:absolute;right:0;top:0;width:61.4%;height:100%;object-fit:cover;object-position:left top}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(10,13,15,.92) 31%,rgba(10,13,15,.12) 66%),linear-gradient(0deg,rgba(10,13,15,.96) 0,transparent 28%)}header{height:70px;display:flex;align-items:center;padding:0 7.1%;gap:7.7%;position:relative;z-index:2}.logo{display:flex;align-items:center;gap:0;font:800 italic 23px Montserrat;letter-spacing:-1.1px}.logo img{width:70px;height:70px;object-fit:contain}.logo span span{color:var(--lime)}header nav{display:flex;gap:29px;align-items:center;flex:1}header nav a{font-size:13px;color:#fff;position:relative;white-space:nowrap}header nav a.active{color:var(--lime)}header nav a.active:after{content:"";position:absolute;left:0;right:4px;bottom:-9px;height:2px;background:var(--lime)}.head-actions{display:flex;align-items:center;gap:16px}.header-cta,.primary{border:0;background:var(--lime);color:#0a0d0f;border-radius:4px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px}.header-cta{width:202px;height:36px;font-size:12px}.icon-btn{border:0;background:transparent;color:white;padding:7px}.hero-copy{position:relative;z-index:1;margin:21px 0 0 7.9%;max-width:565px;transition:.8s;opacity:0;transform:translateY(20px)}.in .hero-copy,.hero-copy.in{opacity:1;transform:none}.eyebrow{font:700 14px Montserrat;color:var(--lime);letter-spacing:.6px;margin-bottom:8px}.hero h1{font:800 46px/48px Montserrat;margin:0}.hero h1 em{font-style:normal;color:var(--lime);font-size:57px;line-height:60px}.hero-copy>p{font-size:15.5px;line-height:19.7px;max-width:390px;margin:7px 0 16px}.hero-buttons{display:flex;gap:28px}.primary,.outline{height:45px;border-radius:4px}.hero-buttons .primary{width:242px;font-size:14px}.outline{background:transparent;border:1px solid var(--lime);color:var(--lime);padding:0 18px;font-weight:600}.stats{position:absolute;z-index:2;bottom:11px;left:7.3%;display:flex;opacity:0;transform:translateY(16px);transition:.8s .15s}.in .stats{opacity:1;transform:none}.stat{min-width:205px;padding:0 25px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid rgba(255,255,255,.14)}.stat:first-child{padding-left:0}.stat:last-child{border-right:0}.stat strong{font-size:20px;line-height:24px}.stat span{font-size:11px;color:var(--muted);line-height:13px}.section{padding:24px 7.7%;opacity:0;transform:translateY(22px);transition:.7s}.section.in{opacity:1;transform:none}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.section-title>div:first-child{display:flex;align-items:center;gap:16px}.section-title i{display:block;width:4px;height:19px;background:var(--lime)}h2{font:700 26px/32px Montserrat;margin:0} .section-title p{font-size:12px;color:var(--muted);margin:0 0 0 0}.section-title a{font-size:13px;color:var(--lime);display:flex;align-items:center;gap:5px}.program-grid,.trainer-grid,.why-grid,.plans-grid,.review-grid{display:grid;gap:22px}.program-grid{grid-template-columns:repeat(4,1fr)}.program-card{height:268px;border:1px solid var(--line);border-radius:4px;background-size:cover;background-position:center;position:relative;padding:146px 22px 15px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start;transition:.3s}.program-card:hover{transform:translateY(-6px);border-color:#3b4a4f}.card-icon{position:absolute;top:82px;left:12px;color:var(--lime);font-size:32px}.program-card h3,.trainer-card h3,.plan h3,.promo h3{font:700 16px/17.5px Montserrat;margin:0}.program-card p{font-size:12.5px;line-height:17px;color:#b6bec1;margin:9px 0}.program-card a{font-size:12.5px;color:var(--lime);margin-top:auto;display:flex;gap:4px;align-items:center}.trainer-grid{grid-template-columns:repeat(4,1fr)}.trainer-card{height:163px;border:1px solid var(--line);background:var(--card);border-radius:4px;display:flex;overflow:hidden}.trainer-card>img{width:135px;height:163px;object-fit:cover}.trainer-card>div{padding:28px 10px 0 4px}.trainer-card h3{font-size:12px;white-space:nowrap}.trainer-card p,.trainer-card small{font-size:10.5px;color:var(--muted);display:block;margin:11px 0 0}.trainer-card small{color:#c9d0d2;margin-top:10px}.socials{display:flex;gap:10px;color:var(--lime);margin-top:14px}.socials svg{width:15px;height:15px}.why{padding-top:21px;padding-bottom:16px}.why-grid{grid-template-columns:repeat(6,1fr);gap:11px}.why-grid article{height:100px;background:var(--card);border:1px solid var(--line);border-radius:4px;display:flex;align-items:center;padding:17px 6px 16px 0}.why-icon{width:60px;color:var(--lime);font-size:28px;text-align:center}.why-grid h3{font-size:11.5px;line-height:16px;margin:0}.why-grid p{font-size:9px;line-height:15px;color:var(--muted);margin:5px 0 0}.plans{padding-top:24px}.plans-grid{grid-template-columns:repeat(4,1fr) 1.25fr;gap:18px}.plan,.promo{height:162px;border:1px solid var(--line);background:var(--card);border-radius:4px;padding:20px 21px;position:relative;display:flex;flex-direction:column}.plan.popular{border-color:rgba(164,236,46,.5)}.plan>b{position:absolute;right:3px;top:1px;background:var(--lime);color:#0a0d0f;font-size:8.5px;padding:2px 7px;border-radius:3px}.plan span{font-size:11px;color:var(--muted);margin-top:4px}.plan strong{font:700 20px/30px Montserrat;margin-top:13px}.plan button{margin-top:auto;width:100%;height:33px}.promo{background:linear-gradient(90deg,rgba(10,13,10,.92),rgba(10,13,10,.3)),url('https://www.figma.com/api/mcp/asset/7e4ce508-cf67-4139-867b-547f93c2e874.png') center/cover;padding:17px 20px}.promo h3{font-size:16.5px;line-height:21px}.promo em{font-style:normal;color:var(--lime)}.promo p{font-size:11px;line-height:17px;color:#c9d0d2;max-width:175px;margin:5px 0 0}.promo .primary{width:117px;height:33px;margin-top:auto;font-size:12.5px}.reviews{padding-top:26px}.arrows{display:flex}.arrows button{width:51px;height:51px;border:0;background:transparent;color:#dbe0e1}.review-grid{grid-template-columns:repeat(4,1fr);gap:17px}.review-grid article{height:133px;border:1px solid var(--line);background:var(--card);border-radius:4px;padding:10px 11px 4px 21px;display:flex;gap:24px}.review-grid img{width:65px;height:65px;border-radius:50%;border:2px solid #3a4144;object-fit:cover}.review-grid h3{font-size:13px;margin:7px 0 5px}.stars{color:var(--lime);font-size:12px;letter-spacing:2px}.review-grid p{font-size:10.5px;line-height:16.5px;color:var(--muted);margin:11px 0 0}.reviews{padding-bottom:10px}footer{padding:27px 7.1% 70px}.footer-top{display:grid;grid-template-columns:184px 1fr 204px 130px;gap:68px;align-items:start}.footer-top .logo img{width:70px;height:70px}.footer-top>div:first-child>p{font-size:12px;color:#c9d0d2;margin:0 0 0 12px}.footer-top nav{display:flex;gap:26px;padding-top:34px;flex-wrap:wrap}.footer-top nav a{font-size:11px}.contacts{padding-top:9px}.contacts p{font-size:12px;color:#e4e8e9;display:flex;align-items:center;gap:5px;margin:0 0 5px}.contacts svg{color:var(--lime)}.footer-social{display:flex;gap:12px;padding-top:23px;align-items:center}.footer-social svg{width:15px}.divider{height:1px;background:rgba(255,255,255,.1);margin:24px 0 12px}.footer-bottom{display:flex;justify-content:space-between;color:var(--muted);font-size:10px}
+@media(max-width:1100px){header{gap:4%}header nav{gap:15px}.header-cta{width:165px}.program-grid,.trainer-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(3,1fr)}.plans-grid{grid-template-columns:repeat(2,1fr)}.promo{grid-column:span 2}.review-grid{grid-template-columns:repeat(2,1fr)}.footer-top{grid-template-columns:1fr 1fr;gap:30px}}
+@media(max-width:700px){.hero{height:940px}.hero-bg img{width:100%;height:520px;top:420px;object-fit:cover;object-position:center top}.hero-overlay{background:linear-gradient(180deg,rgba(10,13,15,.1) 0,rgba(10,13,15,.2) 44%,rgba(10,13,15,.97) 85%)}header{height:64px;padding:0 11px}.logo{font-size:18px}.logo img{width:56px;height:56px}header nav,.header-cta{display:none}.head-actions{margin-left:auto;gap:0}.hero-copy{margin:23px 20px 0;max-width:none}.eyebrow{font-size:11px}.hero h1{font-size:28px;line-height:29px}.hero h1 em{font-size:36px;line-height:36px}.hero-copy>p{font-size:13px;line-height:17px;margin-top:14px;max-width:335px}.hero-buttons{display:flex;flex-direction:column;gap:12px;margin-top:18px}.hero-buttons .primary,.hero-buttons .outline{width:100%;height:48px}.stats{left:13px;right:13px;bottom:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px 0}.stat{min-width:0;border:0;padding:0 0 0 0;display:block}.stat strong,.stat span{display:block}.stat strong{font-size:18px}.stat span{font-size:10px}.section{padding:20px}.section-title{align-items:flex-start;flex-direction:column;gap:10px}.section-title>div:first-child{align-items:flex-start;gap:16px}.section-title p{margin-top:4px}.section-title a{margin-left:0}.section-title h2{font-size:22px;line-height:28px}.program-grid,.trainer-grid,.why-grid,.plans-grid,.review-grid{grid-template-columns:1fr;gap:12px}.program-card{height:268px}.trainer-card{width:100%}.why-grid article{height:100px}.plans-grid{grid-template-columns:1fr 1fr}.plan{width:auto}.promo{grid-column:span 2}.review-grid article{height:133px}.footer-top{grid-template-columns:1fr;gap:0}.footer-top nav{padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.contacts{padding-top:25px}.footer-social{position:absolute;margin-top:-180px;margin-left:0}.footer-bottom{display:block;line-height:20px}.footer-bottom span{display:block}.footer-bottom span+span{margin-top:8px}.divider{margin-top:20px}footer{padding:0 20px 35px}.footer-top .logo img{width:56px;height:56px}.hero+.section{padding-top:20px}}
+.mobile-nav{display:none}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s}.reveal.in{opacity:1;transform:none}
+.program-card{background-image:linear-gradient(180deg,transparent 28%,rgba(10,13,15,.96) 100%),var(--bg)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#a4ec2e;color:#0a0d0f;padding:12px 18px;border-radius:4px;font-weight:700;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:700px){.mobile-nav{position:absolute;display:flex;flex-direction:column;gap:14px;top:64px;left:12px;right:12px;padding:18px;background:rgba(10,13,15,.98);border:1px solid var(--line);border-radius:5px;z-index:10;opacity:0;pointer-events:none;transform:translateY(-8px);transition:.2s}.mobile-nav.open{opacity:1;pointer-events:auto;transform:none}.mobile-nav a{font-size:13px;padding:7px 4px}.desktop-nav{display:none!important}}
+
+/* Figma asset sprites — exact crops used by the reference design. */
+.sprite{display:inline-block;flex:0 0 auto;background-repeat:no-repeat;pointer-events:none;mix-blend-mode:normal}
+.sprite-header{background-image:url("https://www.figma.com/api/mcp/asset/9f835853-d492-4b8c-b05b-00df37b9dfca.png");background-size:96px 96px}
+.search-sprite{width:48px;height:48px;background-position:0 0}
+.menu-sprite{width:40px;height:40px;background-position:-40px 0;background-size:80px 80px}
+.arrow-left-sprite{width:51px;height:51px;background-position:0 -51px;background-size:102px 102px}
+.arrow-right-sprite{width:51px;height:51px;background-position:-51px -51px;background-size:102px 102px}
+.program-sprite{position:absolute;top:81px;left:11px;width:72px;height:72px;background-image:url("https://www.figma.com/api/mcp/asset/c953b453-e418-448f-a630-620fb5254fbc.png");background-size:144px 144px}
+/* Program icon quadrants */
+.program-card:nth-child(1) .program-sprite{background-position:0 0}
+.program-card:nth-child(2) .program-sprite{background-position:-72px 0}
+.program-card:nth-child(3) .program-sprite{background-position:0 -72px}
+.program-card:nth-child(4) .program-sprite{background-position:-72px -72px}
+.social-sprite{width:33px;height:33px;background-image:url("https://www.figma.com/api/mcp/asset/6b3d5db5-7a84-47d7-9ead-6fe5ad654533.png");background-size:66px 66px}
+.social-vk{background-position:0 0}.social-tg{background-position:-33px 0}.social-inst{background-position:0 -33px}
+.why-sprite{position:absolute;left:-2px;top:17px;width:64px;height:64px;background-image:url("https://www.figma.com/api/mcp/asset/118d96ab-29c4-4d0b-8ad1-c4120a7b9776.png");background-size:192px 128px}
+.why-grid article:nth-child(1) .why-sprite{background-position:0 0}.why-grid article:nth-child(2) .why-sprite{background-position:-64px 0}.why-grid article:nth-child(3) .why-sprite{background-position:-128px 0}.why-grid article:nth-child(4) .why-sprite{background-position:0 -64px}.why-grid article:nth-child(5) .why-sprite{background-position:-64px -64px}.why-grid article:nth-child(6) .why-sprite{background-position:-128px -64px}
+.footer-phone{width:32px;height:32px;background-image:url("https://www.figma.com/api/mcp/asset/fe117430-3070-4a92-91c3-3420cb73d08c.png");background-size:96px 64px;background-position:0 0}.footer-pin{width:36px;height:36px;background-image:url("https://www.figma.com/api/mcp/asset/fe117430-3070-4a92-91c3-3420cb73d08c.png");background-size:108px 72px;background-position:-36px 0}
+.footer-social-sprite{width:29px;height:29px;background-image:url("https://www.figma.com/api/mcp/asset/fe117430-3070-4a92-91c3-3420cb73d08c.png")}
+.footer-vk{background-size:87px 58px;background-position:-58px 0}.footer-tg{background-size:99px 66px;background-position:0 -33px}.footer-inst{background-size:105px 70px;background-position:-35px -35px}.footer-youtube{background-size:90px 60px;background-position:-60px -30px}
+.figma-icon-btn{padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden}.figma-icon-btn .sprite{margin:0}.arrow-sprite{padding:0;border:0;background:transparent;width:51px;height:51px;display:block;overflow:hidden}.arrow-sprite .sprite{display:block}
+/* Buttons: responsive hover/focus motion without changing the Figma resting state. */
+button,.primary,.outline,.header-cta,.plan-btn{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,border-color .2s ease,filter .2s ease}
+button:hover,.primary:hover,.outline:hover,.header-cta:hover,.plan-btn:hover{transform:translateY(-2px)}
+.primary:hover,.header-cta:hover{box-shadow:0 10px 24px rgba(164,236,46,.22);filter:brightness(1.06)}
+.outline:hover,.plan-btn:hover{background:rgba(164,236,46,.09);box-shadow:0 8px 18px rgba(164,236,46,.12);border-color:var(--lime)}
+button:active,.primary:active,.outline:active,.header-cta:active,.plan-btn:active{transform:translateY(0) scale(.98);box-shadow:none}
+button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.program-card:hover .program-sprite,.trainer-card:hover .social-sprite,.why-grid article:hover .why-sprite,.footer-social:hover .footer-social-sprite{filter:brightness(1.12)}
+.program-card .program-sprite,.why-sprite,.social-sprite,.footer-social-sprite,.footer-phone,.footer-pin{transition:transform .25s ease,filter .25s ease}
+.program-card:hover .program-sprite{transform:translateY(-2px) scale(1.04)}
+.trainer-card:hover .social-sprite{transform:translateY(-1px)}
+.why-grid article{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.why-grid article:hover{transform:translateY(-3px);border-color:#334145;box-shadow:0 10px 20px rgba(0,0,0,.18)}
+.trainer-card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.trainer-card:hover{transform:translateY(-3px);border-color:#334145;box-shadow:0 10px 22px rgba(0,0,0,.2)}
+.plan{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.plan:hover{transform:translateY(-3px);border-color:rgba(164,236,46,.45);box-shadow:0 12px 24px rgba(0,0,0,.18)}
+.logo img{mix-blend-mode:normal}
+
+
+/* ===== FINAL CORRECTIONS ===== */
+.logo{display:flex;align-items:center;justify-content:flex-start;width:110px;height:70px;overflow:hidden;line-height:0}
+.logo img{display:block;width:110px!important;height:70px!important;object-fit:contain;object-position:left center;background:transparent;mix-blend-mode:normal;filter:none}
+header .logo:hover{transform:none}
+header .logo img{transition:transform .25s ease,filter .25s ease}
+header .logo:hover img{transform:scale(1.025);filter:brightness(1.08)}
+
+/* Real Figma navigation icons, never text glyph placeholders. */
+.figma-icon-btn{width:36px;height:36px;min-width:36px;border:0;background:transparent;color:var(--white);padding:0;display:flex;align-items:center;justify-content:center;border-radius:4px;position:relative;overflow:hidden}
+.figma-icon-btn .sprite{display:block;margin:0;position:relative;inset:auto}
+.figma-icon-btn:hover{background:rgba(164,236,46,.08);box-shadow:none;transform:none}
+.figma-icon-btn:hover .sprite{filter:brightness(1.25);transform:scale(1.06)}
+
+/* Desktop navigation hover/active animation. */
+header .desktop-nav a{color:#fff;transition:color .22s ease,transform .22s ease}
+header .desktop-nav a::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:2px;background:var(--lime);transform:scaleX(0);transform-origin:center;transition:transform .25s ease}
+header .desktop-nav a:hover{color:var(--lime);transform:translateY(-1px)}
+header .desktop-nav a:hover::after,header .desktop-nav a.active::after{transform:scaleX(1)}
+header .desktop-nav a.active:after{left:0;right:0}
+.mobile-nav a{position:relative;color:#fff;transition:color .2s ease,transform .2s ease,padding-left .2s ease}
+.mobile-nav a::after{content:"";position:absolute;left:0;bottom:2px;width:28px;height:2px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.mobile-nav a:hover,.mobile-nav a:focus-visible{color:var(--lime);transform:translateX(3px);padding-left:7px}
+.mobile-nav a:hover::after,.mobile-nav a:focus-visible::after{transform:scaleX(1)}
+.mobile-menu-btn{transition:background .2s ease,transform .2s ease}
+.mobile-menu-btn[aria-expanded="true"] .menu-sprite{transform:rotate(90deg)}
+
+/* Why-us icons must belong to their own cards; the previous absolute positioning
+   had no positioned parent and sent every icon to the page corner. */
+.why-grid article{position:relative;padding-left:68px;overflow:hidden}
+.why-grid article .why-sprite{position:absolute;left:4px;top:18px;width:56px;height:56px;background-size:168px 112px;z-index:1}
+.why-grid article:nth-child(1) .why-sprite{background-position:0 0}
+.why-grid article:nth-child(2) .why-sprite{background-position:-56px 0}
+.why-grid article:nth-child(3) .why-sprite{background-position:-112px 0}
+.why-grid article:nth-child(4) .why-sprite{background-position:0 -56px}
+.why-grid article:nth-child(5) .why-sprite{background-position:-56px -56px}
+.why-grid article:nth-child(6) .why-sprite{background-position:-112px -56px}
+.why-grid article>div{min-width:0}
+
+/* Trainer social icons: identical box, baseline and visual center for VK / Telegram / Instagram. */
+.socials{display:flex;align-items:center;justify-content:flex-start;gap:9px;height:20px;margin-top:13px;line-height:0}
+.social-sprite{display:block!important;position:relative!important;inset:auto!important;width:18px!important;height:18px!important;background-size:36px 36px!important;flex:0 0 18px!important;transform:none!important}
+.social-vk{background-position:0 0}.social-tg{background-position:-18px 0}.social-inst{background-position:0 -18px}
+.trainer-card:hover .social-sprite{transform:translateY(-1px)!important}
+
+/* Footer social icons share one 20px visual box and the same flex baseline. */
+.footer-social{display:flex;align-items:center;justify-content:flex-start;gap:12px;height:29px;padding-top:0;line-height:0}
+.footer-social-sprite{display:block!important;position:relative!important;inset:auto!important;width:20px!important;height:20px!important;flex:0 0 20px!important;transform:none!important;background-image:url("https://www.figma.com/api/mcp/asset/fe117430-3070-4a92-91c3-3420cb73d08c.png");background-repeat:no-repeat}
+/* The Figma footer sheet contains the four icons; normalize their crop to one 20px cell. */
+.footer-vk{background-size:60px 40px!important;background-position:-40px 0!important}
+.footer-tg{background-size:60px 40px!important;background-position:0 -20px!important}
+.footer-inst{background-size:60px 40px!important;background-position:-20px -20px!important}
+.footer-youtube{background-size:60px 40px!important;background-position:-40px -20px!important}
+.footer-social .footer-social-sprite:hover{transform:translateY(-1px)!important;filter:brightness(1.15)}
+
+/* Remove accidental generic glyph/icon styling and make all icon wrappers layout-safe. */
+.sprite{vertical-align:middle}
+.arrow-sprite .sprite{position:relative;inset:auto}
+
+/* Buttons: visible hover motion on every interactive button/link CTA. */
+.header-cta,.primary,.outline,.plan-btn{will-change:transform}
+.header-cta:hover,.primary:hover{transform:translateY(-3px) scale(1.015);box-shadow:0 12px 26px rgba(164,236,46,.24);filter:brightness(1.07)}
+.outline:hover,.plan-btn:hover{transform:translateY(-3px) scale(1.015);background:rgba(164,236,46,.10);box-shadow:0 10px 22px rgba(164,236,46,.14);border-color:var(--lime)}
+.header-cta:active,.primary:active,.outline:active,.plan-btn:active{transform:translateY(0) scale(.985)}
+
+@media(max-width:700px){
+  .logo{width:90px;height:56px}
+  .logo img{width:90px!important;height:56px!important}
+  .why-grid article{padding-left:68px}
+  .why-grid article .why-sprite{left:4px;top:18px;width:56px;height:56px;background-size:168px 112px}
+  .footer-social{position:static;margin:0;padding-top:25px;height:45px}
+}
+
+
+/* ===== USER REQUEST: CLEAN LOGO / REMOVE SOCIALS / FOOTER HOVER ===== */
+/* The previous raster logo carried a baked black rectangle. Use the same wordmark as live text
+   so there is no opaque image background at all. */
+.logo{
+  width:auto!important;
+  min-width:110px;
+  height:70px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  overflow:visible!important;
+  line-height:1!important;
+  transition:transform .22s ease, filter .22s ease;
+}
+.logo-word{
+  display:inline-block;
+  color:#f7f9fa;
+  font-family:Montserrat,Inter,sans-serif;
+  font-size:23px;
+  font-style:italic;
+  font-weight:800;
+  letter-spacing:-1.15px;
+  white-space:nowrap;
+}
+.logo-word span{color:var(--lime)}
+.logo:hover{transform:translateY(-1px)!important;filter:brightness(1.08)}
+.logo img{display:none!important}
+
+/* Social icons are intentionally removed from the page. */
+.socials,.footer-social{display:none!important}
+.social-sprite,.footer-social-sprite,.footer-vk,.footer-tg,.footer-inst,.footer-youtube{display:none!important}
+
+/* Footer navigation and legal links have a clear hover animation. */
+footer nav a,
+.footer-bottom span:last-child{
+  position:relative;
+  display:inline-block;
+  transition:color .22s ease, transform .22s ease, opacity .22s ease;
+}
+footer nav a::after,
+.footer-bottom span:last-child::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-5px;
+  height:2px;
+  background:var(--lime);
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform .24s ease;
+}
+footer nav a:hover,
+.footer-bottom span:last-child:hover{
+  color:var(--lime);
+  transform:translateY(-2px);
+}
+footer nav a:hover::after,
+.footer-bottom span:last-child:hover::after{transform:scaleX(1)}
+
+/* Footer contact rows get the same subtle interaction treatment. */
+.contacts p{transition:color .22s ease, transform .22s ease}
+.contacts p:hover{color:var(--lime);transform:translateX(3px)}
+
+@media(max-width:700px){
+  .logo{min-width:90px;height:56px!important}
+  .logo-word{font-size:19px}
+}
+
+/* ===== USER REQUEST: PRECISE HEADER / LOGO / FOOTER / PLANS CORRECTIONS ===== */
+/* Use the real Figma logo mark and the same screen blend mode as the reference.
+   This removes the black pixels from the raster mark instead of deleting the logo. */
+.logo{width:auto!important;min-width:154px;height:70px!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:0!important;overflow:visible!important;line-height:0!important;transform:none!important;filter:none!important}
+.logo img.logo-mark{display:block!important;width:70px!important;height:70px!important;object-fit:contain!important;object-position:center!important;mix-blend-mode:normal!important;background:transparent!important;flex:0 0 70px!important}
+.logo-word{display:inline-block!important;color:#f7f9fa!important;font-family:Montserrat,Inter,sans-serif!important;font-size:23px!important;font-style:italic!important;font-weight:800!important;letter-spacing:-1.1px!important;line-height:1!important;white-space:nowrap!important;margin-left:-1px!important}
+.logo-word span{color:var(--lime)!important}
+.logo:hover,.logo:hover .logo-mark,.logo:hover .logo-word{transform:none!important;filter:none!important}
+
+/* Search is removed from every breakpoint. Burger remains only on mobile/tablet. */
+.icon-btn[aria-label="Поиск"]{display:none!important}
+@media(min-width:701px){.mobile-menu-btn{display:none!important}}
+
+/* Footer legal items are two independent links with a very light color-only hover. */
+.footer-bottom .legal-links{display:flex!important;align-items:center!important;gap:34px!important;color:var(--muted)!important}
+.footer-bottom .legal-links a{color:inherit!important;text-decoration:none!important;transition:color .2s ease!important;transform:none!important}
+.footer-bottom .legal-links a:hover,.footer-bottom .legal-links a:focus-visible{color:#f1f4f5!important;transform:none!important}
+.footer-bottom .legal-links a::after{display:none!important;content:none!important}
+
+/* Footer navigation: subtle white tint only, no movement and no underline. */
+footer nav a{transition:color .2s ease!important;transform:none!important}
+footer nav a:hover,footer nav a:focus-visible{color:#eef2f3!important;transform:none!important}
+footer nav a::after{display:none!important;content:none!important}
+
+/* The free-first-workout promo must react exactly like the four plan cards. */
+.plan,.promo{transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease!important}
+.plan:hover,.promo:hover{transform:translateY(-3px)!important;border-color:rgba(164,236,46,.45)!important;box-shadow:0 12px 24px rgba(0,0,0,.18)!important}
+.plan.popular:hover{border-color:rgba(164,236,46,.7)!important}
+
+/* Keep inner buttons from causing a different visual rhythm when the cursor moves over them. */
+.plan .plan-btn:hover,.promo .primary:hover{transform:translateY(-2px)!important}
+
+@media(max-width:700px){
+  .logo{min-width:110px!important;height:56px!important}
+  .logo img.logo-mark{width:56px!important;height:56px!important;flex-basis:56px!important}
+  .logo-word{font-size:19px!important}
+  .footer-bottom .legal-links{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:8px!important}
+}
+
+/* Cancel legacy footer hover rules from the earlier revision. */
+.footer-bottom .legal-links:hover{color:var(--muted)!important;transform:none!important}
+.footer-bottom .legal-links::after{display:none!important;content:none!important}
+
+
+/* FINAL LOGO FIX: use the user's local logo asset. */
+.logo img.logo-mark{display:block!important;visibility:visible!important;opacity:1!important;width:70px!important;height:70px!important;object-fit:contain!important;object-position:center!important;flex:0 0 70px!important;mix-blend-mode:normal!important;background:transparent!important}
+@media(max-width:700px){.logo img.logo-mark{display:block!important;width:56px!important;height:56px!important;flex-basis:56px!important}}
+
+/* FIX: Figma icon sprite sheets include a dark raster backdrop. Keep the icon artwork,
+   but visually knock out the black backdrop against the site's dark surfaces. */
+.sprite,
+.program-sprite,
+.why-sprite,
+.footer-phone,
+.footer-pin,
+.figma-icon-btn .sprite,
+.arrow-sprite .sprite{
+  background-color:transparent!important;
+  mix-blend-mode:screen!important;
+}
+
+
+/* ===== FINAL USER REQUEST: footer/header navigation + restrained controls ===== */
+/* Footer navigation uses the same hover language as the desktop header navigation. */
+footer .footer-top nav a{
+  position:relative!important;
+  color:#fff!important;
+  transition:color .22s ease,transform .22s ease!important;
+  transform:none!important;
+}
+footer .footer-top nav a::after{
+  content:""!important;
+  position:absolute!important;
+  left:0!important;
+  right:0!important;
+  bottom:-10px!important;
+  height:2px!important;
+  background:var(--lime)!important;
+  transform:scaleX(0)!important;
+  transform-origin:center!important;
+  transition:transform .25s ease!important;
+}
+footer .footer-top nav a:hover,
+footer .footer-top nav a:focus-visible{
+  color:var(--lime)!important;
+  transform:translateY(-1px)!important;
+}
+footer .footer-top nav a:hover::after,
+footer .footer-top nav a:focus-visible::after{
+  transform:scaleX(1)!important;
+}
+
+/* Plan / promo buttons: color-only hover. Never move or resize the button. */
+.plan .plan-btn:hover,
+.plan .plan-btn:focus-visible,
+.promo .primary:hover,
+.promo .primary:focus-visible{
+  transform:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  background:rgba(164,236,46,.09)!important;
+  border-color:var(--lime)!important;
+}
+.plan .plan-btn,
+.promo .primary{
+  transition:background-color .22s ease,color .22s ease,border-color .22s ease!important;
+}
+
+/* Footer phone and address: color only, no horizontal movement. */
+footer .contacts p{
+  transition:color .22s ease!important;
+  transform:none!important;
+}
+footer .contacts p:hover,
+footer .contacts p:focus-visible{
+  color:var(--lime)!important;
+  transform:none!important;
+}
+
+/* Review arrows: color only, no lift / scale / movement. */
+.reviews .arrows button,
+.reviews .arrow-sprite{
+  transition:color .22s ease,background-color .22s ease,filter .22s ease!important;
+  transform:none!important;
+  box-shadow:none!important;
+}
+.reviews .arrows button:hover,
+.reviews .arrows button:focus-visible,
+.reviews .arrow-sprite:hover,
+.reviews .arrow-sprite:focus-visible{
+  color:var(--lime)!important;
+  transform:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  background:transparent!important;
+}
+.reviews .arrows button:hover .sprite,
+.reviews .arrows button:focus-visible .sprite{
+  transform:none!important;
+  filter:brightness(1.2)!important;
+}
+
+/* ===== FINAL ANIMATION CORRECTIONS ===== */
+/* Review arrows: clearly visible ALPHAFIT lime on hover, with no movement or scaling. */
+.reviews .arrows .arrow-sprite,
+.reviews .arrows .arrow-sprite:hover,
+.reviews .arrows .arrow-sprite:focus-visible{
+  transform:none!important;
+  box-shadow:none!important;
+  background-color:transparent!important;
+}
+.reviews .arrows .arrow-sprite .sprite{
+  transform:none!important;
+  transition:filter .2s ease!important;
+}
+.reviews .arrows .arrow-sprite:hover .sprite,
+.reviews .arrows .arrow-sprite:focus-visible .sprite{
+  /* Convert the white arrow artwork to the exact site lime (#a4ec2e). */
+  filter:brightness(0) saturate(100%) invert(82%) sepia(89%) saturate(645%) hue-rotate(32deg) brightness(103%) contrast(84%)!important;
+}
+
+/* Plan buttons: "Выбрать" only changes colour; no lift, scale or shadow. */
+.plan .plan-btn:hover,
+.plan .plan-btn:focus-visible{
+  transform:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  background:var(--lime)!important;
+  color:#0a0d0f!important;
+  border-color:var(--lime)!important;
+}
+
+/* Promo "Записаться": invert the palette on hover — black button, lime text. */
+.promo .primary:hover,
+.promo .primary:focus-visible{
+  transform:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+  background:#0a0d0f!important;
+  color:var(--lime)!important;
+  border:1px solid var(--lime)!important;
+}
+
+/* Footer navigation: the lime underline must visibly slide out from the left. */
+footer .footer-top nav a{
+  display:inline-block!important;
+  position:relative!important;
+  transform:none!important;
+  transition:color .22s ease,transform .22s ease!important;
+}
+footer .footer-top nav a::after{
+  content:""!important;
+  display:block!important;
+  position:absolute!important;
+  left:0!important;
+  right:auto!important;
+  bottom:-9px!important;
+  width:100%!important;
+  height:2px!important;
+  background:var(--lime)!important;
+  transform:scaleX(0)!important;
+  transform-origin:left center!important;
+  transition:transform .25s ease!important;
+}
+footer .footer-top nav a:hover,
+footer .footer-top nav a:focus-visible{
+  color:var(--lime)!important;
+  transform:translateY(-1px)!important;
+}
+footer .footer-top nav a:hover::after,
+footer .footer-top nav a:focus-visible::after{
+  transform:scaleX(1)!important;
+}
+
+/* ===== FINAL FINAL: match header nav + neutral review arrows + centered footer contacts ===== */
+/* Footer navigation: exact same underline animation as the desktop header — expands from the center. */
+footer .footer-top nav a{
+  position:relative!important;
+  display:inline-block!important;
+  color:#fff!important;
+  transform:none!important;
+  transition:color .22s ease, transform .22s ease!important;
+}
+footer .footer-top nav a::after{
+  content:""!important;
+  position:absolute!important;
+  left:0!important;
+  right:0!important;
+  bottom:-10px!important;
+  width:auto!important;
+  height:2px!important;
+  background:var(--lime)!important;
+  transform:scaleX(0)!important;
+  transform-origin:center!important;
+  transition:transform .25s ease!important;
+}
+footer .footer-top nav a:hover,
+footer .footer-top nav a:focus-visible{
+  color:var(--lime)!important;
+  transform:translateY(-1px)!important;
+}
+footer .footer-top nav a:hover::after,
+footer .footer-top nav a:focus-visible::after{
+  transform:scaleX(1)!important;
+}
+
+/* Review arrows: no image-wide filter. Keep the controls completely static on hover. */
+.reviews .arrows button,
+.reviews .arrows button:hover,
+.reviews .arrows button:focus-visible,
+.reviews .arrows .arrow-sprite,
+.reviews .arrows .arrow-sprite:hover,
+.reviews .arrows .arrow-sprite:focus-visible{
+  color:inherit!important;
+  background:transparent!important;
+  filter:none!important;
+  transform:none!important;
+  box-shadow:none!important;
+}
+.reviews .arrows .arrow-sprite .sprite,
+.reviews .arrows .arrow-sprite:hover .sprite,
+.reviews .arrows .arrow-sprite:focus-visible .sprite{
+  filter:none!important;
+  transform:none!important;
+  transition:none!important;
+}
+
+/* Footer contacts: both icon boxes use the same dimensions and are vertically centered with their text. */
+footer .contacts p{
+  display:flex!important;
+  align-items:center!important;
+  min-height:20px!important;
+  line-height:20px!important;
+  gap:6px!important;
+}
+footer .contacts .footer-phone,
+footer .contacts .footer-pin{
+  display:block!important;
+  position:relative!important;
+  width:20px!important;
+  height:20px!important;
+  flex:0 0 20px!important;
+  margin:0!important;
+  background-size:60px 40px!important;
+  background-repeat:no-repeat!important;
+}
+footer .contacts .footer-phone{background-position:0 0!important}
+footer .contacts .footer-pin{background-position:-20px 0!important}
+/* Final header alignment: keep logo left, navigation centered, CTA right */
+header{
+  display:grid!important;
+  grid-template-columns:auto 1fr auto!important;
+  align-items:center!important;
+  gap:0!important;
+}
+header nav{
+  justify-content:center!important;
+  flex:none!important;
+  width:100%!important;
+}
+.head-actions{justify-self:end!important}
+
+/* ALPHAFIT — окно записи. Все классы с префиксом bk-, чтобы не пересекаться со стилями сайта. */
+
+.bk-overlay {
+  --bk-card: #121415;
+  --bk-field: #1a1d1f;
+  --bk-field-hover: #202427;
+  --bk-line: rgba(255, 255, 255, .09);
+  --bk-text: #f4f5f2;
+  --bk-muted: rgba(244, 245, 242, .58);
+  --bk-accent: #c6ff3d;
+  --bk-accent-dark: #0e1100;
+  --bk-error: #ff6b5e;
+
+  position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 16px;
+  background: rgba(4, 5, 5, .72); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  opacity: 0; visibility: hidden; transition: opacity .25s ease, visibility 0s linear .25s;
+  color: var(--bk-text);
+  font-family: "Helvetica Neue", "Segoe UI", Arial, "Noto Sans", sans-serif;
+  font-size: 16px; line-height: 24px; -webkit-font-smoothing: antialiased;
+}
+.bk-overlay *, .bk-overlay *::before, .bk-overlay *::after { box-sizing: border-box; }
+.bk-overlay :where(button, input) { font: inherit; margin: 0; }
+.bk-overlay.is-open { opacity: 1; visibility: visible; transition: opacity .25s ease; }
+.bk-overlay[hidden] { display: none; }
+
+.bk-modal {
+  position: relative; width: 100%; max-width: 520px; max-height: calc(100vh - 32px); overflow-y: auto;
+  background: var(--bk-card); border: 1px solid var(--bk-line); border-radius: 24px; padding: 28px 32px 24px;
+  box-shadow: 0 40px 120px rgba(0, 0, 0, .6);
+  transform: translateY(20px) scale(.97); transition: transform .3s cubic-bezier(.2, .8, .2, 1);
+  scrollbar-width: thin;
+}
+.bk-modal::before {
+  content: ""; position: absolute; left: 50%; top: -1px; width: 55%; height: 2px; transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--bk-accent), transparent); opacity: .9;
+}
+.bk-overlay.is-open .bk-modal { transform: none; }
+
+.bk-close {
+  position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; padding: 0; margin: 0; border-radius: 12px; border: 1px solid var(--bk-line);
+  background: transparent; cursor: pointer; display: grid; place-items: center; color: var(--bk-muted); transition: background .15s, color .15s;
+}
+.bk-close:hover { background: var(--bk-field); color: var(--bk-text); }
+.bk-close:focus-visible { outline: 2px solid var(--bk-accent); outline-offset: 2px; }
+
+.bk-badge {
+  display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border-radius: 999px; margin-bottom: 12px;
+  background: rgba(198, 255, 61, .1); color: var(--bk-accent); font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: .3px;
+}
+.bk-badge::before { content: ""; flex: none; width: 6px; height: 6px; border-radius: 50%; background: var(--bk-accent); box-shadow: 0 0 10px var(--bk-accent); }
+.bk-title { margin: 0 0 6px; font-size: 24px; line-height: 30px; letter-spacing: -.4px; font-weight: 700; padding-right: 40px; }
+.bk-lead { margin: 0 0 20px; color: var(--bk-muted); font-size: 14px; line-height: 20px; text-wrap: balance; }
+
+/* ---------- form ---------- */
+.bk-field { margin: 0 0 14px; border: 0; padding: 0; min-width: 0; }
+.bk-field > label:not(.bk-consent), .bk-field > legend { display: block; margin-bottom: 6px; padding: 0; font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: .3px; color: var(--bk-muted); }
+.bk-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.bk-input {
+  width: 100%; height: 46px; padding: 0 16px; margin: 0; border-radius: 14px; border: 1px solid transparent;
+  background: var(--bk-field); color: var(--bk-text); outline: none; transition: border-color .15s, background .15s, box-shadow .15s;
+  color-scheme: dark;
+}
+.bk-input::placeholder { color: rgba(244, 245, 242, .32); }
+.bk-input:hover { background: var(--bk-field-hover); }
+.bk-input:focus { border-color: var(--bk-accent); box-shadow: 0 0 0 4px rgba(198, 255, 61, .12); }
+.bk-field.has-error .bk-input { border-color: var(--bk-error); box-shadow: 0 0 0 4px rgba(255, 107, 94, .12); }
+.bk-error { display: none; margin: 5px 0 0; font-size: 12px; line-height: 16px; color: var(--bk-error); }
+.bk-field.has-error .bk-error { display: block; }
+
+/* chips (radio) */
+.bk-chips { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.bk-chip { position: relative; display: block; }
+.bk-chip input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.bk-chip span {
+  display: flex; align-items: center; justify-content: center; height: 38px; padding: 0; border-radius: 999px; font-size: 13.5px;
+  background: var(--bk-field); border: 1px solid transparent; color: var(--bk-text); transition: background .15s, color .15s, border-color .15s;
+}
+.bk-chip:hover span { background: var(--bk-field-hover); }
+.bk-chip input:checked + span { background: var(--bk-accent); color: var(--bk-accent-dark); font-weight: 700; }
+.bk-chip input:focus-visible + span { outline: 2px solid var(--bk-accent); outline-offset: 2px; }
+.bk-field.has-error .bk-chip span { border-color: rgba(255, 107, 94, .5); }
+
+/* consent */
+.bk-consent { display: flex; gap: 12px; align-items: flex-start; margin: 0; cursor: pointer; font-size: 12.5px; line-height: 18px; color: var(--bk-muted); }
+.bk-consent input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.bk-consent__box {
+  flex: none; width: 22px; height: 22px; border-radius: 7px; border: 1.5px solid rgba(255, 255, 255, .25);
+  display: grid; place-items: center; transition: background .15s, border-color .15s;
+}
+.bk-consent__box svg { opacity: 0; transform: scale(.6); transition: opacity .15s, transform .15s; }
+.bk-consent input:checked + .bk-consent__box { background: var(--bk-accent); border-color: var(--bk-accent); }
+.bk-consent input:checked + .bk-consent__box svg { opacity: 1; transform: none; }
+.bk-consent input:focus-visible + .bk-consent__box { outline: 2px solid var(--bk-accent); outline-offset: 2px; }
+.bk-consent a { color: var(--bk-text); text-decoration: underline; text-decoration-color: rgba(198, 255, 61, .6); text-underline-offset: 3px; }
+.bk-consent a:hover { color: var(--bk-accent); }
+.bk-field.has-error .bk-consent__box { border-color: var(--bk-error); }
+.bk-note { margin: 10px 0 0; font-size: 11.5px; line-height: 16px; color: rgba(244, 245, 242, .4); text-align: center; }
+
+/* button */
+.bk-btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
+  height: 48px; padding: 0 28px; margin: 0; border: 0; border-radius: 14px; cursor: pointer;
+  background: var(--bk-accent); color: var(--bk-accent-dark); font-weight: 700; font-size: 16px; line-height: 24px;
+  transition: transform .15s, box-shadow .2s, background .2s;
+}
+.bk-btn:hover { background: #d4ff6b; box-shadow: 0 8px 28px rgba(198, 255, 61, .28); }
+.bk-btn:active { transform: translateY(1px) scale(.99); }
+.bk-btn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.bk-btn[disabled] { opacity: .7; cursor: progress; }
+.bk-form-view .bk-btn { margin-top: 4px; }
+.bk-spinner { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(14, 17, 0, .25); border-top-color: var(--bk-accent-dark); animation: bk-spin .7s linear infinite; display: none; }
+.bk-btn.is-loading .bk-spinner { display: block; }
+@keyframes bk-spin { to { transform: rotate(360deg); } }
+
+/* ---------- success ---------- */
+.bk-success { display: none; text-align: center; padding: 12px 0 4px; }
+.bk-modal.is-done .bk-form-view { display: none; }
+.bk-modal.is-done .bk-success { display: block; animation: bk-rise .4s ease both; }
+.bk-success__icon { width: 72px; height: 72px; margin: 0 auto 20px; border-radius: 50%; background: rgba(198, 255, 61, .12); display: grid; place-items: center; box-shadow: 0 0 0 10px rgba(198, 255, 61, .05); }
+.bk-success .bk-title { padding: 0; }
+.bk-success p { margin: 0 0 20px; color: var(--bk-muted); }
+.bk-success b { color: var(--bk-text); }
+.bk-summary { text-align: left; margin: 0 0 24px; padding: 4px 18px; background: var(--bk-field); border-radius: 16px; }
+.bk-summary div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; font-size: 15px; }
+.bk-summary div + div { border-top: 1px solid var(--bk-line); }
+.bk-summary dt { color: var(--bk-muted); }
+.bk-summary dd { margin: 0; font-weight: 600; text-align: right; }
+@keyframes bk-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* ---------- mobile: окно выезжает снизу ---------- */
+@media (max-width: 599px) {
+  .bk-overlay { place-items: end center; padding: 0; }
+  .bk-modal { max-width: none; max-height: 94vh; border-radius: 24px 24px 0 0; padding: 28px 20px 24px; border-bottom: 0; transform: translateY(40px); }
+  .bk-title { font-size: 24px; line-height: 30px; }
+  .bk-close { top: 14px; right: 14px; }
+  .bk-row { grid-template-columns: 1fr; gap: 0; }
+  .bk-chips { grid-template-columns: repeat(4, 1fr); }
+}
+/* невысокие окна браузера: ещё чуть компактнее, чтобы не было прокрутки */
+@media (max-height: 680px) and (min-width: 600px) {
+  .bk-modal { padding: 20px 28px 18px; }
+  .bk-badge { margin-bottom: 8px; }
+  .bk-lead { margin-bottom: 14px; }
+  .bk-field { margin-bottom: 10px; }
+  .bk-input { height: 42px; }
+  .bk-chip span { height: 34px; }
+  .bk-btn { height: 44px; }
+}
+/* ---------- desktop: окно на всю высоту экрана ----------
+   Высота = высота окна браузера минус поля (но не больше 920px). Размеры плавно растут
+   вместе с высотой экрана, а свободное место равномерно распределяется между блоками. */
+@media (min-width: 600px) {
+  .bk-modal {
+    display: flex; flex-direction: column;
+    height: min(calc(100vh - 48px), 920px);
+    padding: clamp(22px, 3.6vh, 40px) 36px clamp(20px, 3.2vh, 36px);
+  }
+  .bk-form-view { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+  #bk-form { flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; }
+  .bk-form-view .bk-field, .bk-form-view .bk-btn { margin: 0; }
+  .bk-badge { align-self: flex-start; margin-bottom: clamp(10px, 1.8vh, 18px); }
+  .bk-title { font-size: clamp(24px, 3.4vh, 30px); line-height: 1.25; }
+  .bk-lead { text-wrap: pretty; margin-bottom: clamp(14px, 2.4vh, 26px); font-size: clamp(14px, 1.9vh, 15px); line-height: 1.45; }
+  .bk-input { height: clamp(44px, 6.4vh, 58px); }
+  .bk-chip span { height: clamp(36px, 5.2vh, 46px); }
+  .bk-btn { height: clamp(46px, 6.4vh, 58px); }
+  .bk-note { margin-top: 0; }
+  .bk-success { margin: auto 0; }
+}
+@media (prefers-reduced-motion: reduce) { .bk-overlay, .bk-modal, .bk-btn { transition: none; } .bk-modal.is-done .bk-success { animation: none; } }
+
+@media(max-width:1100px) and (min-width:701px){
+  header{gap:0!important}
+  header nav{gap:15px!important}
+}
+@media(max-width:700px){
+  header{display:flex!important}
+}
+
+/* FINAL: keep header navigation underline at V4 size; footer only at 1.5px */
+footer .footer-top nav a::after{height:1.5px!important;}

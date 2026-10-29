@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пользовательское соглашение сайта «ALPHAFIT»</title>
+<meta name="description" content="Правила пользования сайтом фитнес-клуба ALPHAFIT, допуск к занятиям и правила клуба.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: rgba(0, 0, 0, .55);
+  --line: rgba(0, 0, 0, .1);
+  --link: #2f6f00;
+  --link-hover: #5a9e00;
+  --accent: #c6ff3d;
+  --ink: #0e0f10;
+  --soft: #f5f5f2;
+  --ph-bg: #fff3b8;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", "Segoe UI", Arial, "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- header ---------- */
+.header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, .96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.header__in {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  height: 64px; display: flex; align-items: center; justify-content: space-between;
+}
+
+.logo-word{
+  display:inline-block;
+  font-family:Montserrat,Inter,sans-serif;
+  font-size:23px;
+  font-style:italic;
+  font-weight:800;
+  letter-spacing:-1.15px;
+  white-space:nowrap;
+}
+
+.logo-fit {
+  color: #a4ec2e;
+}
+
+.logo { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; border: 0; }
+.logo:hover { color: var(--text); }
+.logo__mark {
+  width: 32px; height: 32px; border-radius: 9px; background: var(--ink); color: var(--accent);
+  display: grid; place-items: center; font-weight: 800; font-size: 18px; letter-spacing: -.5px;
+}
+.logo__name { font-weight: 800; font-size: 20px; letter-spacing: .6px; }
+.logo__name span { color: #6aa800; }
+.header__label { color: var(--muted); font-size: 14px; }
+
+/* ---------- layout ---------- */
+.page {
+  max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px;
+  display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 64px;
+}
+.article { max-width: 800px; min-width: 0; }
+
+h1 { font-size: 36px; line-height: 44px; font-weight: 700; margin: 0 0 32px; letter-spacing: -.3px; }
+h2 { font-size: 24px; line-height: 32px; font-weight: 700; margin: 48px 0 16px; position: relative; }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 16px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+li::marker { color: var(--muted); }
+strong { font-weight: 700; }
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(47, 111, 0, .3); transition: color .15s, border-color .15s; }
+a:hover { color: var(--link-hover); border-color: var(--link-hover); }
+
+/* anchor icon on heading hover, as in docs platforms */
+h2 .anchor {
+  position: absolute; left: -28px; top: 0; width: 24px; height: 32px;
+  display: grid; place-items: center; border: 0; color: var(--muted);
+  opacity: 0; transition: opacity .15s;
+}
+h2:hover .anchor, h2 .anchor:focus { opacity: 1; }
+
+/* placeholders to be filled in by the owner */
+mark.ph { background: var(--ph-bg); color: inherit; padding: 0 4px; border-radius: 4px; }
+
+/* ---------- TOC ---------- */
+.toc { position: sticky; top: 96px; align-self: start; }
+.toc__title { font-size: 14px; line-height: 20px; color: var(--muted); margin: 0 0 12px; font-weight: 400; }
+.toc ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+.toc li { margin: 0; }
+.toc a {
+  display: block; padding: 6px 0 6px 16px; margin-left: -1px; border: 0; border-left: 2px solid transparent;
+  color: var(--text); font-size: 14px; line-height: 20px;
+}
+.toc a:hover { color: var(--link-hover); }
+.toc a.is-active { border-left-color: #6aa800; font-weight: 600; }
+
+.toc--inline { display: none; position: static; top: auto; z-index: auto; margin: 0 0 32px; padding: 16px 20px; background: var(--soft); border-radius: 12px; }
+.toc--inline ul { border: 0; }
+.toc--inline a { padding-left: 0; border: 0; font-size: 15px; }
+
+/* ---------- footer note ---------- */
+.date { color: var(--muted); font-style: italic; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.footer__in { max-width: 1200px; margin: 0 auto; padding: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1023px) {
+  .page { grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 28px; }
+  .toc--side { display: none; }
+  .toc--inline { display: block; }
+  h2 .anchor { display: none; }
+}
+@media (max-width: 599px) {
+  .header__in, .page, .footer__in { padding-left: 16px; padding-right: 16px; }
+  .header__label { display: none; }
+  h1 { font-size: 28px; line-height: 36px; margin-bottom: 24px; }
+  h2 { font-size: 21px; line-height: 28px; margin-top: 40px; }
+  html { scroll-padding-top: 80px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__in">
+    <a class="logo" href="#top" aria-label="ALPHAFIT">
+      <img class="logo-mark" src="assets/logo-mark.svg" alt="">
+      <span class="logo-word">ALPHA<span class="logo-fit">FIT</span></span>
+    </a>
+    <span class="header__label">Правовые документы</span>
+  </div>
+</header>
+
+<div class="page" id="top">
+  <main class="article">
+    <h1>Пользовательское соглашение сайта «ALPHAFIT»</h1>
+
+    <nav class="toc toc--inline" aria-label="В этой статье">
+      <p class="toc__title">В этой статье:</p>
+      <ul>
+        <li><a href="#terms">1. Термины и определения</a></li>
+        <li><a href="#subject">2. Предмет Соглашения</a></li>
+        <li><a href="#request">3. Заявка на пробное занятие и персональные данные</a></li>
+        <li><a href="#health">4. Допуск к занятиям и состояние здоровья</a></li>
+        <li><a href="#rules">5. Правила зала и съёмка</a></li>
+        <li><a href="#freeze">6. Заморозка абонемента</a></li>
+        <li><a href="#liability">7. Ответственность</a></li>
+        <li><a href="#other">8. Иные положения</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="terms"><a class="anchor" href="#terms" aria-label="Ссылка на раздел">#</a>1. Термины и определения</h2>
+    <p>1.1. Для целей настоящего Пользовательского соглашения нижеуказанные термины имеют следующие значения:</p>
+    <ul>
+      <li><strong>Сайт</strong> — интернет-ресурс, расположенный по адресу <mark class="ph">[адрес сайта, например https://alphafit.ru]</mark>, включая его дизайн, тексты и изображения.</li>
+      <li><strong>Клуб</strong> — фитнес-клуб «ALPHAFIT», принадлежащий <mark class="ph">[ИП Фамилия Имя Отчество]</mark> (ИНН <mark class="ph">[ИНН]</mark>, ОГРНИП <mark class="ph">[ОГРНИП]</mark>), который администрирует Сайт и оказывает услуги, расположенный по адресу <mark class="ph">[адрес клуба]</mark>.</li>
+      <li><strong>Пользователь</strong> — любое лицо, которое заходит на Сайт и (или) отправляет через него заявку. Продолжая пользоваться Сайтом, Пользователь подтверждает, что согласен с условиями настоящего Соглашения.</li>
+      <li><strong>Клиент</strong> — лицо, которое посещает занятия в Клубе, в том числе пробное.</li>
+      <li><strong>Заявка</strong> — форма на Сайте, через которую Пользователь просит записать его на пробное занятие.</li>
+      <li><strong>Персональные данные</strong> — сведения о Пользователе, которые он сам указал в Заявке.</li>
+    </ul>
+
+    <h2 id="subject"><a class="anchor" href="#subject">#</a>2. Предмет Соглашения</h2>
+    <p>2.1. Настоящее Соглашение устанавливает правила пользования Сайтом и посещения Клуба и является договором между Пользователем и Клубом.</p>
+    <p>2.2. Доступ к Сайту, отправка Заявки или посещение Клуба означают, что Пользователь принимает все условия настоящего Соглашения.</p>
+    <p>2.3. Информация на Сайте носит справочный характер и не является публичной офертой. Условия оказания платных услуг, в том числе стоимость абонементов, определяются отдельным договором, который заключается в Клубе.</p>
+
+    <h2 id="request"><a class="anchor" href="#request">#</a>3. Заявка на пробное занятие и персональные данные</h2>
+    <p>3.1. Для записи на пробное занятие Пользователь заполняет Заявку на Сайте и указывает достоверные имя и контактный телефон.</p>
+    <p>3.2. Отправляя Заявку, Пользователь добровольно соглашается на обработку своих Персональных данных Клубом в целях связи с ним по поводу записи и организации пробного занятия. Данные не передаются третьим лицам, кроме случаев, предусмотренных законодательством РФ.</p>
+    <p>3.3. Клуб хранит Персональные данные только пока это нужно для указанных целей. Пользователь вправе в любой момент потребовать удалить свои данные, написав на <mark class="ph">[e-mail клуба]</mark>.</p>
+    <p>3.4. Пользователь обязуется не указывать в Заявке данные других лиц без их согласия.</p>
+
+    <h2 id="health"><a class="anchor" href="#health">#</a>4. Допуск к занятиям и состояние здоровья</h2>
+    <p>4.1. К самостоятельным занятиям в Клубе допускаются лица, достигшие 18 лет.</p>
+    <p>4.2. Лица в возрасте от 14 до 17 лет допускаются к занятиям только в присутствии одного из родителей (законного представителя) либо при наличии его письменного согласия.</p>
+    <p>4.3. Перед первым занятием Клиент заполняет заявление о состоянии здоровья и подтверждает в нём, что ему известны и понятны правила Клуба.</p>
+    <p>4.4. Клуб вправе потребовать справку от врача о допуске к физическим нагрузкам, если у тренера или администратора есть основания полагать, что занятия могут навредить Клиенту.</p>
+    <p>4.5. Перед каждым занятием Клиент обязан сообщить тренеру:</p>
+    <ul>
+      <li>о любых ограничениях и запретах, установленных врачом, в том числе о тех, о которых он узнал недавно;</li>
+      <li>о своём самочувствии в этот день: головной боли, недомогании, травме, боли в спине или суставах и т.п.</li>
+    </ul>
+    <p>4.6. Если Клиент не знает о своих возможных противопоказаниях, ему рекомендуется предварительно проконсультироваться с врачом.</p>
+    <p>4.7. Тренер вправе изменить программу занятия, ограничить нагрузку или отказать в проведении занятия в этот день, если считает, что оно небезопасно для Клиента.</p>
+
+    <h2 id="rules"><a class="anchor" href="#rules">#</a>5. Правила зала и съёмка</h2>
+    <p>5.1. Клиент обязан выполнять указания тренеров и администрации Клуба, бережно относиться к оборудованию и уважительно вести себя по отношению к другим посетителям.</p>
+    <p>5.2. Съёмка самого себя в залах Клуба разрешена. Клуб не запрещает такую съёмку и не вправе потребовать полностью её прекратить.</p>
+    <p>5.3. Снимать других посетителей и сотрудников без их согласия запрещено. Если другой человек попал в кадр, он вправе потребовать изменить ракурс или удалить материал, и Клиент обязан это выполнить.</p>
+    <p>5.4. Размещать в интернете материалы, на которых видны другие люди, без их согласия запрещено.</p>
+
+    <h2 id="freeze"><a class="anchor" href="#freeze">#</a>6. Заморозка абонемента</h2>
+    <p>6.1. Клиент вправе приостановить действие абонемента (заморозить его) на основании письменного заявления, поданного в Клуб до начала периода заморозки.</p>
+    <p>6.2. Максимальный срок и количество заморозок: <mark class="ph">[например, не более 30 дней за срок действия абонемента]</mark>. Заморозка <mark class="ph">[бесплатная / платная — указать]</mark>.</p>
+    <p>6.3. Заморозка продлевает срок действия абонемента на количество дней, в течение которых он был заморожен. Основание для заморозки <mark class="ph">[любое по желанию Клиента / только при болезни или отъезде, с подтверждающим документом — выбрать]</mark>.</p>
+
+    <h2 id="liability"><a class="anchor" href="#liability">#</a>7. Ответственность</h2>
+    <p>7.1. Клуб старается обеспечить бесперебойную работу Сайта, но не гарантирует отсутствие сбоев и предоставляет Сайт «как есть».</p>
+    <p>7.2. Клиент самостоятельно отвечает за достоверность сведений о здоровье, которые он сообщает Клубу и тренерам, и за соблюдение указаний тренера и правил Клуба.</p>
+    <p>7.3. Клуб не несёт ответственности за вред, возникший из-за того, что Клиент скрыл или исказил сведения о своём здоровье, либо нарушил правила Клуба или указания тренера, в пределах, допускаемых законодательством РФ.</p>
+    <p>7.4. Клиент самостоятельно отвечает за ущерб, причинённый им имуществу Клуба или другим посетителям.</p>
+
+    <h2 id="other"><a class="anchor" href="#other">#</a>8. Иные положения</h2>
+    <p>8.1. Настоящее Соглашение регулируется законодательством Российской Федерации.</p>
+    <p>8.2. Споры стороны стараются решить путём переговоров. Претензии направляются на <mark class="ph">[e-mail клуба]</mark> или вручаются администратору лично. Если договориться не удалось, спор рассматривается в суде в соответствии с законодательством РФ.</p>
+    <p>8.3. Если одно из положений Соглашения будет признано недействительным, остальные положения продолжают действовать.</p>
+    <p>8.4. Клуб вправе изменять Соглашение. Новая редакция вступает в силу с момента публикации на Сайте, если иное не указано в ней.</p>
+    <p>8.5. Контакты Клуба: <mark class="ph">[телефон]</mark>, <mark class="ph">[e-mail]</mark>, <mark class="ph">[адрес]</mark>.</p>
+
+    <p class="date">Дата публикации 27.10.2026 г.</p>
+  </main>
+
+  <aside class="toc toc--side" aria-label="В этой статье">
+    <p class="toc__title">В этой статье:</p>
+    <ul id="toc-list">
+      <li><a href="#terms">1. Термины и определения</a></li>
+      <li><a href="#subject">2. Предмет Соглашения</a></li>
+      <li><a href="#request">3. Заявка на пробное занятие и персональные данные</a></li>
+      <li><a href="#health">4. Допуск к занятиям и состояние здоровья</a></li>
+      <li><a href="#rules">5. Правила зала и съёмка</a></li>
+      <li><a href="#freeze">6. Заморозка абонемента</a></li>
+      <li><a href="#liability">7. Ответственность</a></li>
+      <li><a href="#other">8. Иные положения</a></li>
+    </ul>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer__in">
+    <span>© ALPHAFIT, <mark class="ph">[ИП Фамилия Имя Отчество]</mark></span>
+    <span>Фитнес-клуб</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var links = document.querySelectorAll('#toc-list a');
+  var sections = Array.prototype.map.call(links, function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var current = null;
+  function setActive(id) {
+    if (id === current) return;
+    current = id;
+    links.forEach(function (a) {
+      a.classList.toggle('is-active', a.getAttribute('href') === '#' + id);
+    });
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) setActive(e.target.id); });
+  }, { rootMargin: '-90px 0px -65% 0px', threshold: 0 });
+  sections.forEach(function (s) { if (s) io.observe(s); });
+  setActive(sections[0].id);
+})();
+</script>
+</body>
+</html>
