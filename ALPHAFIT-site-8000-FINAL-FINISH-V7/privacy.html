@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности ALPHAFIT</title>
+<meta name="description" content="Как фитнес-клуб ALPHAFIT обрабатывает и защищает персональные данные.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: rgba(0, 0, 0, .55);
+  --line: rgba(0, 0, 0, .1);
+  --link: #2f6f00;
+  --link-hover: #5a9e00;
+  --accent: #c6ff3d;
+  --ink: #0e0f10;
+  --soft: #f5f5f2;
+  --ph-bg: #fff3b8;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", "Segoe UI", Arial, "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- header ---------- */
+.header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, .96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.header__in {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  height: 64px; display: flex; align-items: center; justify-content: space-between;
+}
+.logo-word{
+  display:inline-block;
+  font-family:Montserrat,Inter,sans-serif;
+  font-size:23px;
+  font-style:italic;
+  font-weight:800;
+  letter-spacing:-1.15px;
+  white-space:nowrap;
+}
+
+.logo-fit {
+  color: #a4ec2e;
+}
+.logo { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; border: 0; }
+.logo:hover { color: var(--text); }
+.logo__mark {
+  width: 32px; height: 32px; border-radius: 9px; background: var(--ink); color: var(--accent);
+  display: grid; place-items: center; font-weight: 800; font-size: 18px; letter-spacing: -.5px;
+}
+.logo__name { font-weight: 800; font-size: 20px; letter-spacing: .6px; }
+.logo__name span { color: #6aa800; }
+.header__label { color: var(--muted); font-size: 14px; }
+
+/* ---------- layout ---------- */
+.page {
+  max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px;
+  display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 64px;
+}
+.article { max-width: 800px; min-width: 0; }
+
+h1 { font-size: 36px; line-height: 44px; font-weight: 700; margin: 0 0 32px; letter-spacing: -.3px; }
+h2 { font-size: 24px; line-height: 32px; font-weight: 700; margin: 48px 0 16px; position: relative; }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 16px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+li::marker { color: var(--muted); }
+strong { font-weight: 700; }
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(47, 111, 0, .3); transition: color .15s, border-color .15s; }
+a:hover { color: var(--link-hover); border-color: var(--link-hover); }
+
+/* anchor icon on heading hover, as in docs platforms */
+h2 .anchor {
+  position: absolute; left: -28px; top: 0; width: 24px; height: 32px;
+  display: grid; place-items: center; border: 0; color: var(--muted);
+  opacity: 0; transition: opacity .15s;
+}
+h2:hover .anchor, h2 .anchor:focus { opacity: 1; }
+
+/* placeholders to be filled in by the owner */
+mark.ph { background: var(--ph-bg); color: inherit; padding: 0 4px; border-radius: 4px; }
+
+/* ---------- TOC ---------- */
+.toc { position: sticky; top: 96px; align-self: start; }
+.toc__title { font-size: 14px; line-height: 20px; color: var(--muted); margin: 0 0 12px; font-weight: 400; }
+.toc ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+.toc li { margin: 0; }
+.toc a {
+  display: block; padding: 6px 0 6px 16px; margin-left: -1px; border: 0; border-left: 2px solid transparent;
+  color: var(--text); font-size: 14px; line-height: 20px;
+}
+.toc a:hover { color: var(--link-hover); }
+.toc a.is-active { border-left-color: #6aa800; font-weight: 600; }
+
+.toc--inline { display: none; position: static; top: auto; z-index: auto; margin: 0 0 32px; padding: 16px 20px; background: var(--soft); border-radius: 12px; }
+.toc--inline ul { border: 0; }
+.toc--inline a { padding-left: 0; border: 0; font-size: 15px; }
+
+/* ---------- footer note ---------- */
+.date { color: var(--muted); font-style: italic; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.footer__in { max-width: 1200px; margin: 0 auto; padding: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1023px) {
+  .page { grid-template-columns: minmax(0, 1fr); gap: 0; padding-top: 28px; }
+  .toc--side { display: none; }
+  .toc--inline { display: block; }
+  h2 .anchor { display: none; }
+}
+@media (max-width: 599px) {
+  .header__in, .page, .footer__in { padding-left: 16px; padding-right: 16px; }
+  .header__label { display: none; }
+  h1 { font-size: 28px; line-height: 36px; margin-bottom: 24px; }
+  h2 { font-size: 21px; line-height: 28px; margin-top: 40px; }
+  html { scroll-padding-top: 80px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__in">
+    <a class="logo" href="#top" aria-label="ALPHAFIT">
+      <img class="logo-mark" src="assets/logo-mark.svg" alt="">
+      <span class="logo-word">ALPHA<span class="logo-fit">FIT</span></span>
+    </a>
+    <span class="header__label">Правовые документы</span>
+  </div>
+</header>
+
+<div class="page" id="top">
+  <main class="article">
+    <h1>Политика конфиденциальности ALPHAFIT</h1>
+
+    <nav class="toc toc--inline" aria-label="В этой статье">
+      <p class="toc__title">В этой статье:</p>
+      <ul>
+        <li><a href="#general">1. Общие положения</a></li>
+        <li><a href="#data">2. Какие данные мы получаем</a></li>
+        <li><a href="#purposes">3. Цели и основания обработки</a></li>
+        <li><a href="#third">4. Передача данных третьим лицам</a></li>
+        <li><a href="#health">5. Данные о здоровье и несовершеннолетних</a></li>
+        <li><a href="#video">6. Видеонаблюдение</a></li>
+        <li><a href="#storage">7. Сроки хранения и защита данных</a></li>
+        <li><a href="#cookie">8. Файлы cookie</a></li>
+        <li><a href="#rights">9. Права пользователя</a></li>
+        <li><a href="#changes">10. Изменения и контакты</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="general"><a class="anchor" href="#general" aria-label="Ссылка на раздел">#</a>1. Общие положения</h2>
+    <p>1.1. Настоящая Политика конфиденциальности (далее — Политика) объясняет, какие данные получает фитнес-клуб «ALPHAFIT», зачем он их обрабатывает, как их защищает и какие права есть у человека.</p>
+    <p>1.2. Оператором персональных данных является <mark class="ph">[ИП Фамилия Имя Отчество]</mark> (ИНН <mark class="ph">[ИНН]</mark>, ОГРНИП <mark class="ph">[ОГРНИП]</mark>), адрес: <mark class="ph">[адрес]</mark>. В Политике он называется «Клуб».</p>
+    <p>1.3. Политика действует в отношении данных, которые Клуб получает:</p>
+    <ul>
+      <li>через сайт <mark class="ph">[адрес сайта]</mark> (далее — Сайт), включая заявку на пробное занятие;</li>
+      <li>в самом Клубе: из заявления о здоровье, из документов о допуске несовершеннолетних и с камер видеонаблюдения.</li>
+    </ul>
+    <p>1.4. Отправляя заявку на Сайте или посещая Клуб, человек подтверждает, что ознакомился с Политикой. Вместе с Политикой действует Пользовательское соглашение сайта, опубликованное на Сайте.</p>
+
+    <h2 id="data"><a class="anchor" href="#data">#</a>2. Какие данные мы получаем</h2>
+    <p>2.1. Из заявки на Сайте:</p>
+    <ul>
+      <li>имя и номер телефона, которые человек указывает сам;</li>
+      <li>выбранная тренировка (направление, дата и время пробного занятия).</li>
+    </ul>
+    <p>2.2. Технические данные, которые передаются автоматически: IP-адрес, тип браузера и устройства, страницы, которые открывал пользователь, данные из файлов cookie (подробнее в разделе 8).</p>
+    <p>2.3. В Клубе дополнительно:</p>
+    <ul>
+      <li>сведения о состоянии здоровья из заявления о здоровье и то, что клиент сообщает тренеру о запретах врача и самочувствии перед занятием;</li>
+      <li>данные несовершеннолетнего (от 14 до 17 лет) и его родителя или законного представителя, необходимые для допуска к занятиям;</li>
+      <li>видеозаписи с камер видеонаблюдения.</li>
+    </ul>
+    <p>2.4. Клуб не запрашивает у Пользователя на Сайте больше данных, чем нужно для записи на занятие. Не нужно указывать на Сайте данные о здоровье, паспортные данные и данные других людей.</p>
+
+    <h2 id="purposes"><a class="anchor" href="#purposes">#</a>3. Цели и основания обработки</h2>
+    <p>3.1. Клуб использует данные только для следующих целей:</p>
+    <ul>
+      <li>связаться с человеком по заявке и записать его на пробное занятие;</li>
+      <li>подтвердить запись, напомнить о занятии и сообщить об изменениях в нём;</li>
+      <li>провести занятие безопасно с учётом состояния здоровья клиента;</li>
+      <li>обеспечить безопасность посетителей, сотрудников и имущества Клуба;</li>
+      <li>обеспечить работу Сайта и понимать, как им пользуются;</li>
+      <li>выполнить требования законодательства РФ.</li>
+    </ul>
+    <p>3.2. Основаниями обработки являются согласие человека, необходимость заключить и исполнить договор с ним, а также требования закона. Согласие на обработку даётся отметкой в форме заявки или подписью в заявлении о здоровье.</p>
+    <p>3.3. Клуб связывается с человеком по телефону, через SMS или мессенджер, и только по поводу его заявки и занятий.</p>
+    <p>3.4. Клуб не использует контакты для рекламных рассылок. Если это изменится, Клуб будет делать это только при наличии отдельного согласия.</p>
+
+    <h2 id="third"><a class="anchor" href="#third">#</a>4. Передача данных третьим лицам</h2>
+    <p>4.1. Клуб не продаёт данные и не передаёт их для рекламы третьих лиц.</p>
+    <p>4.2. Для работы Клуба данные могут обрабатывать организации, которые предоставляют Клубу технические услуги, строго по поручению Клуба и только в пределах целей из раздела 3:</p>
+    <ul>
+      <li>хостинг и сервер Сайта: <mark class="ph">[название хостинга]</mark>;</li>
+      <li>CRM или таблица заявок: <mark class="ph">[название сервиса]</mark>;</li>
+      <li>сервис рассылок и звонков: <mark class="ph">[название сервиса]</mark>.</li>
+    </ul>
+    <p>4.3. Такие организации обязаны сохранять конфиденциальность и защищать данные.</p>
+    <p>4.4. Данные могут быть переданы государственным органам, если это требуется законом.</p>
+    <p>4.5. Данные граждан РФ записываются, хранятся и обрабатываются в базах данных на территории Российской Федерации.</p>
+
+    <h2 id="health"><a class="anchor" href="#health">#</a>5. Данные о здоровье и несовершеннолетних</h2>
+    <p>5.1. Сведения о здоровье относятся к особой категории персональных данных. Клуб обрабатывает их только с письменного согласия человека и только для того, чтобы допустить его к занятиям и провести их безопасно.</p>
+    <p>5.2. Доступ к этим сведениям есть только у тренеров и администратора Клуба. Они не передаются другим клиентам и не публикуются.</p>
+    <p>5.3. Заявку на Сайте подаёт лицо, достигшее 18 лет, либо родитель (законный представитель) от имени несовершеннолетнего.</p>
+    <p>5.4. Данные несовершеннолетних от 14 до 17 лет обрабатываются только с согласия родителя (законного представителя) и в объёме, необходимом для допуска к занятиям.</p>
+
+    <h2 id="video"><a class="anchor" href="#video">#</a>6. Видеонаблюдение</h2>
+    <p>6.1. В Клубе ведётся видеонаблюдение в целях безопасности. Камеры установлены в следующих зонах: <mark class="ph">[например, вход, ресепшен, тренажёрный зал]</mark>. О наблюдении предупреждают таблички.</p>
+    <p>6.2. Видеонаблюдение не ведётся в раздевалках, душевых и санузлах.</p>
+    <p>6.3. Записи хранятся не более <mark class="ph">[срок, например 30 дней]</mark>, затем автоматически удаляются. Доступ к записям имеют только <mark class="ph">[кто: владелец, администратор]</mark>. Записи передаются третьим лицам только по требованию закона.</p>
+
+    <h2 id="storage"><a class="anchor" href="#storage">#</a>7. Сроки хранения и защита данных</h2>
+    <p>7.1. Данные хранятся не дольше, чем нужно для целей из раздела 3, если закон не требует хранить их дольше:</p>
+    <ul>
+      <li>данные из заявки: до окончания обработки заявки, а если человек не стал клиентом, не более <mark class="ph">[срок, например 12 месяцев]</mark>;</li>
+      <li>данные клиента и заявление о здоровье: на срок действия договора и <mark class="ph">[срок после его окончания]</mark>;</li>
+      <li>видеозаписи: срок из пункта 6.3.</li>
+    </ul>
+    <p>7.2. По достижении целей или по требованию человека данные удаляются или обезличиваются.</p>
+    <p>7.3. Клуб принимает организационные и технические меры защиты: ограничивает доступ сотрудников, использует пароли и защищённое соединение на Сайте, заключает с исполнителями соглашения о конфиденциальности.</p>
+
+    <h2 id="cookie"><a class="anchor" href="#cookie">#</a>8. Файлы cookie</h2>
+    <p>8.1. Сайт использует файлы cookie: технические, без которых он не работает, и аналитические (<mark class="ph">[например, Яндекс.Метрика]</mark>), которые помогают понять, какие страницы полезны посетителям.</p>
+    <p>8.2. Cookie не используются для персонализированной рекламы.</p>
+    <p>8.3. Пользователь может отключить или удалить cookie в настройках браузера. Тогда некоторые функции Сайта могут работать некорректно.</p>
+
+    <h2 id="rights"><a class="anchor" href="#rights">#</a>9. Права пользователя</h2>
+    <p>9.1. Человек вправе:</p>
+    <ul>
+      <li>узнать, какие его данные обрабатывает Клуб, и получить к ним доступ;</li>
+      <li>потребовать исправить неточные данные;</li>
+      <li>потребовать удалить данные или ограничить их обработку;</li>
+      <li>отозвать согласие на обработку в любой момент;</li>
+      <li>пожаловаться в Роскомнадзор или в суд, если считает, что его права нарушены.</li>
+    </ul>
+    <p>9.2. Для этого нужно написать на <mark class="ph">[e-mail клуба]</mark> или обратиться к администратору лично. Клуб ответит в срок, установленный законом.</p>
+    <p>9.3. После отзыва согласия Клуб прекращает обработку данных и удаляет их, кроме случаев, когда закон обязывает их хранить.</p>
+
+    <h2 id="changes"><a class="anchor" href="#changes">#</a>10. Изменения и контакты</h2>
+    <p>10.1. Клуб вправе изменять Политику. Новая редакция вступает в силу с момента публикации на Сайте, если иное не указано в ней.</p>
+    <p>10.2. По вопросам обработки данных можно обращаться: <mark class="ph">[e-mail]</mark>, <mark class="ph">[телефон]</mark>, <mark class="ph">[адрес клуба]</mark>.</p>
+
+    <p class="date">Дата публикации 27.10.2026 г.</p>
+  </main>
+
+  <aside class="toc toc--side" aria-label="В этой статье">
+    <p class="toc__title">В этой статье:</p>
+    <ul id="toc-list">
+      <li><a href="#general">1. Общие положения</a></li>
+      <li><a href="#data">2. Какие данные мы получаем</a></li>
+      <li><a href="#purposes">3. Цели и основания обработки</a></li>
+      <li><a href="#third">4. Передача данных третьим лицам</a></li>
+      <li><a href="#health">5. Данные о здоровье и несовершеннолетних</a></li>
+      <li><a href="#video">6. Видеонаблюдение</a></li>
+      <li><a href="#storage">7. Сроки хранения и защита данных</a></li>
+      <li><a href="#cookie">8. Файлы cookie</a></li>
+      <li><a href="#rights">9. Права пользователя</a></li>
+      <li><a href="#changes">10. Изменения и контакты</a></li>
+    </ul>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer__in">
+    <span>© ALPHAFIT, <mark class="ph">[ИП Фамилия Имя Отчество]</mark></span>
+    <span>Фитнес-клуб</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var links = document.querySelectorAll('#toc-list a');
+  var sections = Array.prototype.map.call(links, function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var current = null;
+  function setActive(id) {
+    if (id === current) return;
+    current = id;
+    links.forEach(function (a) {
+      a.classList.toggle('is-active', a.getAttribute('href') === '#' + id);
+    });
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) setActive(e.target.id); });
+  }, { rootMargin: '-90px 0px -65% 0px', threshold: 0 });
+  sections.forEach(function (s) { if (s) io.observe(s); });
+  setActive(sections[0].id);
+})();
+</script>
+</body>
+</html>
