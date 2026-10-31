@@ -143,7 +143,7 @@ function sendLead(data) {
       return r.json();
     })
     .then(function (res) {
-      if (res.status !== 'ok') {
+      if (res.success !== true) {
         throw new Error(res.error || 'telegram error');
       }
     });
