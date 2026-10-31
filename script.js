@@ -149,7 +149,6 @@ function showToast(text){const t=document.querySelector('#toast');t.textContent=
       }
     });
 }
-  }
 
   function formatDate(iso) { var p = iso.split('-'); return p[2] + '.' + p[1] + '.' + p[0]; }
 
