@@ -127,14 +127,28 @@ function showToast(text){const t=document.querySelector('#toast');t.textContent=
          .then(function (r) { if (!r.ok) throw new Error('send failed'); });
      Сейчас отправка только имитируется. */
     function sendLead(data) {
-    var fd = new FormData();
-    fd.append('name', data.name);
-    fd.append('phone', data.phone);
-    fd.append('message', 'Пробная тренировка с тренером. Дата: ' + formatDate(data.date) +
-      ', время: ' + data.time + '. Согласие на обработку персональных данных: да');
-    return fetch('http://localhost:8001/api/lead', { method: 'POST', body: fd })
-      .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
-      .then(function (res) { if (res.status !== 'ok') throw new Error(res.message || 'crm error'); });
+  return fetch('https://alphafit-telegram.emperor-mk2-lbx.workers.dev', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: data.name,
+      phone: data.phone,
+      date: data.date,
+      time: data.time
+    })
+  })
+    .then(function (r) {
+      if (!r.ok) throw new Error('http ' + r.status);
+      return r.json();
+    })
+    .then(function (res) {
+      if (res.status !== 'ok') {
+        throw new Error(res.error || 'telegram error');
+      }
+    });
+}
   }
 
   function formatDate(iso) { var p = iso.split('-'); return p[2] + '.' + p[1] + '.' + p[0]; }
