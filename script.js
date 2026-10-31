@@ -121,12 +121,9 @@ function showToast(text){const t=document.querySelector('#toast');t.textContent=
   form.addEventListener('input', function (e) { var f = e.target.closest('[data-field]'); if (f) f.classList.remove('has-error'); });
   form.addEventListener('change', function (e) { var f = e.target.closest('[data-field]'); if (f) f.classList.remove('has-error'); });
 
-  /* ---- отправка ----
-     TODO: замените тело sendLead запросом на ваш сервер или CRM, например:
-       return fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
-         .then(function (r) { if (!r.ok) throw new Error('send failed'); });
-     Сейчас отправка только имитируется. */
-    function sendLead(data) {
+  /* ---- отправка ---- */
+
+function sendLead(data) {
   return fetch('https://alphafit-telegram.emperor-mk2-lbx.workers.dev', {
     method: 'POST',
     headers: {
@@ -140,7 +137,9 @@ function showToast(text){const t=document.querySelector('#toast');t.textContent=
     })
   })
     .then(function (r) {
-      if (!r.ok) throw new Error('http ' + r.status);
+      if (!r.ok) {
+        throw new Error('http ' + r.status);
+      }
       return r.json();
     })
     .then(function (res) {
@@ -150,7 +149,10 @@ function showToast(text){const t=document.querySelector('#toast');t.textContent=
     });
 }
 
-  function formatDate(iso) { var p = iso.split('-'); return p[2] + '.' + p[1] + '.' + p[0]; }
+function formatDate(iso) {
+  var p = iso.split('-');
+  return p[2] + '.' + p[1] + '.' + p[0];
+}
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
