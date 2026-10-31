@@ -672,3 +672,8 @@ header nav{
 
 /* FINAL: keep header navigation underline at V4 size; footer only at 1.5px */
 footer .footer-top nav a::after{height:1.5px!important;}
+/* ===== БЫСТРЫЙ ФИКС ДЛЯ ТЕЛЕФОНА ===== */
+html, body {
+    overflow-x: hidden !important; /* Убирает шатание в стороны */
+    max-width: 100vw !important;
+}
