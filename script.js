@@ -124,7 +124,7 @@ function showToast(text){const t=document.querySelector('#toast');t.textContent=
   /* ---- отправка ---- */
 
 function sendLead(data) {
-  return fetch('https://alphafit-telegram.emperor-mk2-lbx.workers.dev', {
+  return fetch('https://alphafit-telegram.layero.app/lead', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
